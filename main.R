@@ -23,7 +23,10 @@ len<-length(sudoku[1,])
 # Se completa el sudoku
 sudoku<-completar(sudoku,len)
 
+# Se crea la lista vacía de números puestos para llamar a la función
+numerospuestos<-data.frame(matrix(c(0,0,0,0),1,4))
+names(numerospuestos)<-c("i","j","numero","nivel")
+numerospuestos<-numerospuestos[-1,]
+
 # Se resuelve el sudoku
 resolver_aleatorio(sudoku,len,numerospuestos,1)
-
-
