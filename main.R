@@ -1,8 +1,6 @@
 
 # Se asigna el directorio de trabajo
 setwd("C:/Carpeta1/Carpeta2/etc")
-setwd("C:/Users/david/Desktop/Mis Cosas/PROYECTOS/Sudoku")
-setwd("C:/Users/17756062/Desktop/Sudoku")
 
 # Se cargan los códigos necesarios para resolver el sudoku
 ## Este código carga el sudoku desde excel: no necesita argumentos
