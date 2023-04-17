@@ -1,0 +1,29 @@
+
+# Se asigna el directorio de trabajo
+setwd("C:/Carpeta1/Carpeta2/etc")
+setwd("C:/Users/david/Desktop/Mis Cosas/PROYECTOS/Sudoku")
+setwd("C:/Users/17756062/Desktop/Sudoku")
+
+# Se cargan los códigos necesarios para resolver el sudoku
+## Este código carga el sudoku desde excel: no necesita argumentos
+source("cargar_matriz.R")
+
+## Este código completa los números que sean posibles del sudoku
+### Argumentos: el sudoku y el número de filas/columnas de este
+source("completar.R")
+
+## Este código resuelve recursivamente el sudoku colocando números en posiciones aleatorias
+### Argumentos: el sudoku, el número de filas/columnas de este, el listado de números puestos y el nivel de la iteración
+source("resolver_aleatorio.R")
+
+# Se carga el sudoku y se asigna a len el número de filas/columnas del sudoku
+sudoku<-cargar_matriz()
+len<-length(sudoku[1,])
+
+# Se completa el sudoku
+sudoku<-completar(sudoku,len)
+
+# Se resuelve el sudoku
+resolver_aleatorio(sudoku,len,numerospuestos,1)
+
+
