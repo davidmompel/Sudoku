@@ -22,6 +22,8 @@ Una vez completado el sudoku, se resuelve el sudoku de manera recursiva con una 
 
 De aquí en adelante intentaré mejorar el algoritmo para que sea más eficiente y actualizaré los archivos. Si has detectado algún error, házmelo saber y lo corregiré en alguna futura versión
 
+El algoritmo ha sido comprobado resolviendo los sudokus del libro "Sudoku para expertos (Vol. 3)" de Alastair Chisholm con ISBN 978-84-414-2483-8
+
 ### Notas
 <ul>
   <li> Se requiere tener instalado la librería "readxl" 
@@ -30,5 +32,5 @@ De aquí en adelante intentaré mejorar el algoritmo para que sea más eficiente
   <li> No hay que ponerle nombre a las filas y columnas del Excel, si no da error
 </ul>
 
-#### Principales cambios
+#### Historial de cambios
 17/04/2023: Primera versión
