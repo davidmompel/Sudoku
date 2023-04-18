@@ -37,7 +37,11 @@ resolver_aleatorio<-function(sudoku,len,numerospuestos,nivel)
   }
   
   # Se reordenan aleatoriamente para rellenar la posición elegida
-  numerosposibles<-sample(numerosposibles,length(numerosposibles))
+  # Si solo hay un número el sample no funciona correctamente, por eso se pone la condición de longitud 
+  if(length(numerosposibles)>1)
+  {
+    numerosposibles<-sample(numerosposibles)
+  }
   
   # Se hace un bucle while infinito para ir rellenando la posición elegida
   # O devuelve error porque el número no era el correcto
@@ -95,7 +99,7 @@ resolver_aleatorio<-function(sudoku,len,numerospuestos,nivel)
             # Se pasa al siguiente elemento de la lista
             numerosposibles<-numerosposibles[-1]
           }
-          # si no ha habido error, se devuelve el resultado obtenido
+          # Si no ha habido error, se devuelve el resultado obtenido
           else
           {
             return(result)
@@ -104,6 +108,5 @@ resolver_aleatorio<-function(sudoku,len,numerospuestos,nivel)
       }
     }
   }
-  
 }
 
