@@ -34,3 +34,4 @@ El algoritmo ha sido comprobado resolviendo los sudokus más difíciles del libr
 
 #### Historial de cambios
 17/04/2023: Primera versión.
+18/04/2023: Se corrige la función "resolver_aleatorio". El "sample" del vector "numerosposibles" daba un resultado erróneo cuando tenía longitud 1. Con longitud 1 no se consideraba como vector, sino como un entero, y se generaba un número aleatorio entre 1 y este número, por lo que se colocaba en la posición un número erróneo que podía hacer fallar el algoritmo. 
