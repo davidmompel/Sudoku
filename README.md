@@ -27,7 +27,6 @@ El algoritmo ha sido comprobado resolviendo los sudokus más difíciles del libr
 ### Notas
 <ul>
   <li> Se requiere tener instalado la librería "readxl".
-  <li> En el Excel que se usa para cargar el sudoku, es necesario que todas las filas y todas las columnas tengan al menos un número. 
   <li> Obviamente el sudoku que se carga en el Excel tiene que ser cuadrado, con un número de filas y columnas que sea cuadrado perfecto.
   <li> No hay que ponerle nombre a las filas y columnas del Excel, si no da error.
 </ul>
@@ -36,3 +35,5 @@ El algoritmo ha sido comprobado resolviendo los sudokus más difíciles del libr
 17/04/2023: Primera versión.
 
 18/04/2023: Se corrige la función "resolver_aleatorio". El "sample" del vector "numerosposibles" daba un resultado erróneo cuando tenía longitud 1. Con longitud 1 no se consideraba como vector, sino como un entero, y se generaba un número aleatorio entre 1 y este número, por lo que se colocaba en la posición un número erróneo que podía hacer fallar el algoritmo. 
+
+19/04/2023: Se corrige la función "cargar_matriz" para evitar que los sudokus con una fila o columna vacía no se carguen. Se añade la función "rango_excel" para determinar el rango del Excel que hay que cargar.
