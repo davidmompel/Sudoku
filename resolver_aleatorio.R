@@ -15,6 +15,12 @@ resolver_aleatorio<-function(sudoku,len,numerospuestos,nivel)
   source("resuelto.R")
   source("matriz_ocupados.R")
   
+  # Si el sudoku está resuelto se devuelven los argumentos de entrada
+  if(resuelto(sudokuaux,len))
+  {
+    return(list(sudoku=sudoku,len=len,numerospuestos=numerospuestos,nivel=nivel))
+  }
+  
   # Se busca una posición aleatoria vacía donde colocar un número aleatorio
   ocupado<-1
   while(ocupado)
