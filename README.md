@@ -31,10 +31,10 @@ El algoritmo ha sido comprobado resolviendo los sudokus más difíciles del libr
 </ul>
 
 #### Historial de cambios
-17/04/2023: Primera versión.
+**17/04/2023**: Primera versión.
 
-18/04/2023: Se corrige la función "resolver_aleatorio". El "sample" del vector "numerosposibles" daba un resultado erróneo cuando tenía longitud 1. Con longitud 1 no se consideraba como vector, sino como un entero, y se generaba un número aleatorio entre 1 y este número, por lo que se colocaba en la posición un número erróneo que podía hacer fallar el algoritmo. 
+**18/04/2023**: Se corrige la función "resolver_aleatorio". El "sample" del vector "numerosposibles" daba un resultado erróneo cuando tenía longitud 1. Con longitud 1 no se consideraba como vector, sino como un entero, y se generaba un número aleatorio entre 1 y este número, por lo que se colocaba en la posición un número erróneo que podía hacer fallar el algoritmo. 
 
-19/04/2023: Se corrige la función "cargar_matriz" para evitar que los sudokus con una fila o columna vacía no se carguen. Se añade la función "rango_excel" para determinar el rango del Excel que hay que cargar.
+**19/04/2023**: Se corrige la función "cargar_matriz" para evitar que los sudokus con una fila o columna vacía no se carguen. Se añade la función "rango_excel" para determinar el rango del Excel que hay que cargar.
 
-21/04/2023: Se corrige la función "rango_excel" que daba error en los múltiplos de 26. Se corrige la función "resolver_aleatorio" ya que si el sudoku de entrada estaba resuelto, se quedaba en un bucle infinito intentando buscar una posición vacía donde colocar un número.
+**21/04/2023**: Se corrige la función "rango_excel" que daba error en los múltiplos de 26. Se corrige la función "resolver_aleatorio" ya que si el sudoku de entrada estaba resuelto, se quedaba en un bucle infinito intentando buscar una posición vacía donde colocar un número.
