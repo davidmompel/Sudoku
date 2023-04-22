@@ -16,7 +16,7 @@ resolver_aleatorio<-function(sudoku,len,numerospuestos,nivel)
   source("matriz_ocupados.R")
   
   # Si el sudoku está resuelto se devuelven los argumentos de entrada
-  if(resuelto(sudokuaux,len))
+  if(resuelto(sudoku,len))
   {
     return(list(sudoku=sudoku,len=len,numerospuestos=numerospuestos,nivel=nivel))
   }
