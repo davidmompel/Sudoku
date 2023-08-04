@@ -1,6 +1,6 @@
 # Solucionador de Sudokus - David Mompel Lancina
 ## Un algoritmo para resolver cualquier sudoku
-### Última actualización: 21/04/2023
+### Última actualización: 08/05/2023
 
 El objetivo de este proyecto es resolver un sudoku. 
 Se carga en la memoria a través de un Excel el sudoku y se completan las filas, columnas y bloques que se pueda.
@@ -39,4 +39,4 @@ El algoritmo ha sido comprobado resolviendo los sudokus más difíciles del libr
 
 **21/04/2023**: Se corrige la función "rango_excel" que daba error en los múltiplos de 26. Se corrige la función "resolver_aleatorio" ya que si el sudoku de entrada estaba resuelto, se quedaba en un bucle infinito intentando buscar una posición vacía donde colocar un número.
 
-**08/05/2023**: Se actualiza la función "cargar_matriz" de manera que puede indicarse como argumento de entrada la ruta donde está el Excel que tiene el sudoku a resolver. Puede no indicarse ninguna ruta y se cargará por defecto el Excel "Sudoku.xlsx" que debería de encontrarse en la ruta dle directorio de trabajo.
+**08/05/2023**: Se actualiza la función "cargar_matriz" de manera que puede indicarse como argumento de entrada la ruta donde está el Excel que tiene el sudoku a resolver. Puede no indicarse ninguna ruta y se cargará por defecto el Excel "Sudoku.xlsx" que debería de encontrarse en la ruta del directorio de trabajo.
